@@ -1,2 +1,5 @@
-# Echo a dummy message to the console
-echo "Hello, World! This is a Docker Action."
+#!/bin/sh -l
+
+echo "hello $1"
+
+echo "time=$(date)" >> $GITHUB_OUTPUT
