@@ -1,5 +1,8 @@
 name: GitHub Actions Demo
 
+# name created at runtime:
+run-name: "GitHub Actions Demo - ${{ github.event_name }}"
+
 on:
   push:
     branches: [ main ]
